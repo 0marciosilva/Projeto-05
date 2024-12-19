@@ -1,0 +1,27 @@
+
+.genero {
+    width: 20%;
+}
+
+.Usuário {
+    margin: 2rem 5rem 2rem 22rem;
+    border: 2px solid #fcf7f7;
+}
+
+.Endereço {
+    margin: 2rem 5rem 2rem 22rem;
+    border: 2px solid #f1eeee;
+}
+
+.Mensagem {
+    margin: 2rem 5rem 2rem 22rem;
+    border: 2px solid #f5eeee;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(8, 8, 8);
+}
+
+

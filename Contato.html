@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_Contato.css" />
+  <link rel="shortcut icon" href="Imagens/favicon-32x32.png" type="image/x-icon" />
+  <title>Contato</title>
+</head>
+
+
+
+<body>
+  <header id="top">
+    <img class="foto" src="Imagens/Eu.jpg" alt="Contato" />
+    <h1>Portfólio e Currículo</h1>
+    <h2>Marcio Costa da Silva</h2>
+
+    <nav>
+      <a class="link" href="index.html">Currículo</a>
+      <a class="link" href="Portfolio.html">Portfólio</a>
+      <a class="link" href="Contato.html">Contato</a>
+      <a class="link" href="https://www.linkedin.com/in/marciocostadasilva-sp" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+
+
+  <div class="info01">
+    <h3>Informações Pessoais:</h3>
+    <ul>
+      <li>
+        Rua Canindé 131, 03033-000 - São Paulo/SP, (11)9 9519-9419,
+        marciodacosta.sp@gmail.com, Brasileiro e Comprometido
+      </li>
+    </ul>
+  </div>
+
+
+
+  <main>
+    <form action="mailto:marciodacosta.sp@gmail.com"></form>
+    <div class="Usuário">
+      <fieldset>
+        <legend>Informações do Usuário</legend>
+
+        <p>
+          <label for="">Nome:</label>
+          <input type="text" name="Nome" id="cnome" size="50" maxlength="45" placeholder="Digite aqui o seu Nome">
+        </p>
+
+        <p>
+          <label for="">Senha:</label>
+          <input type="password" name="Senha" id="csenha" size="15" maxlength="8" placeholder="Digite a sua Senha">
+        </p>
+
+        <p>
+          <label for="">E-mail:</label>
+          <input type="email" name="E-mail" id="cemail" size="30" maxlength="30" placeholder="Digite aqui o seu E-mail"
+            required>
+        </p>
+
+
+
+        <div class="genero">
+          <fieldset>
+            <legend>Gênero</legend>
+            <p>
+              <input type="radio" name="genero" id="cmasc">
+              <label for="cmasc">Masculino</label><br>
+            </p>
+            <p>
+              <input type="radio" name="genero" id="cfemin">
+              <label for="cfemin">Feminino</label><br>
+            </p>
+            <p>
+              <input type="radio" name="genero" id="coutr">
+              <label for="coutr">Outros</label>
+            </p>
+          </fieldset>
+        </div>
+
+
+
+        <p>
+          <legend>Data de Nascimento</legend><br>
+          <input type="date" name="data de nascimento" id="cdata">
+        </p>
+      </fieldset>
+    </div>
+
+    <div class="Endereço">
+      <fieldset>
+        <legend>Dados de Endereço</legend>
+        <p>
+          <label for="">Logradouro:</label>
+          <input type="text" name="Dados de Endereço" id="cend" size="45" maxlength="30"
+            placeholder="Rua/Avenida/Travessa">
+        </p>
+
+        <p>
+          <label for="">N°:</label>
+          <input type="number" name="Dados de Endereço" id="cnum" min="1" max="9999" placeholder="Número">
+        </p>
+
+        <p>
+          <label for="">Bairro:</label>
+          <input type="text" name="Dados de Endereço" id="cbairro" size="10" maxlength="30"
+            placeholder="Inserir Bairro">
+        </p>
+
+        <p>
+          <label for="">Estado:</label>
+          <select name="Dados de Endereço" id="cestado" placeholder="Inserir Estado">
+            <option value="">Escolha o Seu Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <label for="">Cidade:</label>
+          <input type="text" name="Dados de Endereço" id="ccid" size="10" maxlength="30" placeholder="Inserir Cidade">
+        </p>
+    </div>
+    </fieldset>
+
+    <div class="Mensagem">
+    <fieldset id="mensagem">
+      <legend>Mensagem do Usuário</legend>
+      <p>
+        <label>Mensagem:</label>
+      </p>
+      <p>
+        <textarea name="msg" id="cmsg" cols="50" rows="10" placeholder="Digite aqui sua mensagem"
+          maxlength="1000"> </textarea>
+      </p>
+    </fieldset>
+
+    <input type="button" value="Enviar" class="btn" name="enviar">
+
+    <input type="reset" value="Limpar" class="btn" name="limpar">
+
+    </form>
+  </div>
+  </main>
+  <footer>
+    <h4>Marcio Silva, Portfólio - 2024</h4>
+  </footer>
+</body>
+
+</html>
