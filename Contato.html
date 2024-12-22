@@ -41,52 +41,47 @@
 
 
   <main>
-    <form action="mailto:marciodacosta.sp@gmail.com"></form>
+  <form action="enviar.php" method="POST">
     <div class="Usuário">
       <fieldset>
         <legend>Informações do Usuário</legend>
 
         <p>
-          <label for="">Nome:</label>
-          <input type="text" name="Nome" id="cnome" size="50" maxlength="45" placeholder="Digite aqui o seu Nome">
+          <label for="cnome">Nome:</label>
+          <input type="text" name="Nome" id="cnome" size="50" maxlength="45" placeholder="Digite aqui o seu Nome" required>
         </p>
 
         <p>
-          <label for="">Senha:</label>
-          <input type="password" name="Senha" id="csenha" size="15" maxlength="8" placeholder="Digite a sua Senha">
+          <label for="csenha">Senha:</label>
+          <input type="password" name="Senha" id="csenha" size="15" maxlength="8" placeholder="Digite a sua Senha" required>
         </p>
 
         <p>
-          <label for="">E-mail:</label>
-          <input type="email" name="E-mail" id="cemail" size="30" maxlength="30" placeholder="Digite aqui o seu E-mail"
-            required>
+          <label for="cemail">E-mail:</label>
+          <input type="email" name="E-mail" id="cemail" size="30" maxlength="30" placeholder="Digite aqui o seu E-mail" required>
         </p>
-
-
 
         <div class="genero">
           <fieldset>
             <legend>Gênero</legend>
             <p>
-              <input type="radio" name="genero" id="cmasc">
+              <input type="radio" name="genero" id="cmasc" value="Masculino" required>
               <label for="cmasc">Masculino</label><br>
             </p>
             <p>
-              <input type="radio" name="genero" id="cfemin">
+              <input type="radio" name="genero" id="cfemin" value="Feminino" required>
               <label for="cfemin">Feminino</label><br>
             </p>
             <p>
-              <input type="radio" name="genero" id="coutr">
+              <input type="radio" name="genero" id="coutr" value="Outros" required>
               <label for="coutr">Outros</label>
             </p>
           </fieldset>
         </div>
 
-
-
         <p>
           <legend>Data de Nascimento</legend><br>
-          <input type="date" name="data de nascimento" id="cdata">
+          <input type="date" name="data_nascimento" id="cdata" required>
         </p>
       </fieldset>
     </div>
@@ -95,25 +90,23 @@
       <fieldset>
         <legend>Dados de Endereço</legend>
         <p>
-          <label for="">Logradouro:</label>
-          <input type="text" name="Dados de Endereço" id="cend" size="45" maxlength="30"
-            placeholder="Rua/Avenida/Travessa">
+          <label for="cend">Logradouro:</label>
+          <input type="text" name="logradouro" id="cend" size="45" maxlength="30" placeholder="Rua/Avenida/Travessa" required>
         </p>
 
         <p>
-          <label for="">N°:</label>
-          <input type="number" name="Dados de Endereço" id="cnum" min="1" max="9999" placeholder="Número">
+          <label for="cnum">N°:</label>
+          <input type="number" name="numero" id="cnum" min="1" max="9999" placeholder="Número" required>
         </p>
 
         <p>
-          <label for="">Bairro:</label>
-          <input type="text" name="Dados de Endereço" id="cbairro" size="10" maxlength="30"
-            placeholder="Inserir Bairro">
+          <label for="cbairro">Bairro:</label>
+          <input type="text" name="bairro" id="cbairro" size="10" maxlength="30" placeholder="Inserir Bairro" required>
         </p>
 
         <p>
-          <label for="">Estado:</label>
-          <select name="Dados de Endereço" id="cestado" placeholder="Inserir Estado">
+          <label for="cestado">Estado:</label>
+          <select name="estado" id="cestado" required>
             <option value="">Escolha o Seu Estado</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -143,31 +136,29 @@
             <option value="SE">Sergipe</option>
             <option value="TO">Tocantins</option>
           </select>
-          <label for="">Cidade:</label>
-          <input type="text" name="Dados de Endereço" id="ccid" size="10" maxlength="30" placeholder="Inserir Cidade">
+
+          <label for="ccid">Cidade:</label>
+          <input type="text" name="cidade" id="ccid" size="10" maxlength="30" placeholder="Inserir Cidade" required>
         </p>
+      </fieldset>
     </div>
-    </fieldset>
 
     <div class="Mensagem">
-    <fieldset id="mensagem">
-      <legend>Mensagem do Usuário</legend>
-      <p>
-        <label>Mensagem:</label>
-      </p>
-      <p>
-        <textarea name="msg" id="cmsg" cols="50" rows="10" placeholder="Digite aqui sua mensagem"
-          maxlength="1000"> </textarea>
-      </p>
-    </fieldset>
+      <fieldset id="mensagem">
+        <legend>Mensagem do Usuário</legend>
+        <p>
+          <label for="cmsg">Mensagem:</label>
+        </p>
+        <p>
+          <textarea name="msg" id="cmsg" cols="50" rows="10" placeholder="Digite aqui sua mensagem" maxlength="1000"></textarea>
+        </p>
+      </fieldset>
 
-    <input type="button" value="Enviar" class="btn" name="enviar">
-
-    <input type="reset" value="Limpar" class="btn" name="limpar">
-
-    </form>
-  </div>
-  </main>
+      <input type="submit" value="Enviar" class="btn">
+      <input type="reset" value="Limpar" class="btn">
+    </div>
+  </form>
+</main>
   <footer>
     <h4>Marcio Silva, Portfólio - 2024</h4>
   </footer>
