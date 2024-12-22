@@ -1,27 +1,17 @@
-
 .genero {
-    width: 20%;
+    width: 40%; /* Aumentando a largura para melhorar a aparência */
 }
 
-.Usuário {
-    margin: 2rem 5rem 2rem 22rem;
-    border: 2px solid #fcf7f7;
-}
-
-.Endereço {
-    margin: 2rem 5rem 2rem 22rem;
-    border: 2px solid #f1eeee;
-}
-
-.Mensagem {
-    margin: 2rem 5rem 2rem 22rem;
-    border: 2px solid #f5eeee;
+.Usuário, .Endereço, .Mensagem {
+    margin: 2rem 5%;
+    border: 2px solid #ddd; /* Bordas uniformes */
 }
 
 legend {
     font-size: 1.2rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif; /* Usando uma fonte mais moderna */
     color: rgb(8, 8, 8);
 }
+
 
 
